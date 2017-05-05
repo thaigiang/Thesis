@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "532916689832",
+    "firebase_url": "https://thesis-79e99.firebaseio.com",
+    "project_id": "thesis-79e99",
+    "storage_bucket": "thesis-79e99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532916689832:android:84e150515f89f879",
+        "android_client_info": {
+          "package_name": "android.com.thesis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532916689832-r90ibj1ts2k17o254l4qvva64o6fdvo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByyZGkzXZyAapsTEBTZEfyIgGdgas1CwU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
