@@ -39,10 +39,11 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="300dp"
+            android:text="Test"
             android:onClick="sendMessage"
-            android:text="Test" />
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="150dp"
+            />
 
     </FrameLayout>
 
