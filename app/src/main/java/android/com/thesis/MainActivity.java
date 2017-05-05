@@ -4,8 +4,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.*;
+import android.widget.*;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +43,25 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
+
+
+    public void sendMessage(View view) {
+        // Do something in response to button click
+        //Toast.makeText(null,"test button",Toast.LENGTH_SHORT).show();
+
+        final EditText edit =  (EditText) findViewById(R.id.editText);
+        int myNum ;
+        myNum = Integer.parseInt(edit.getText().toString());
+        /*try {
+            myNum = Integer.parseInt(edit.getText().toString());
+        }catch(NumberFormatException nfe) {
+
+        }*/
+
+
+        Toast toast = Toast.makeText(this, "Your number : " + myNum, Toast.LENGTH_SHORT);
+        toast.show();
     }
 
 }
