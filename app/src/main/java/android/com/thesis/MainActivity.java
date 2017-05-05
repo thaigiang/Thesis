@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
+                    final EditText edit =  (EditText) findViewById(R.id.editText);
+                    int myNum ;
+                    myNum = Integer.parseInt(edit.getText().toString());
                     return true;
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
@@ -51,17 +54,20 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(null,"test button",Toast.LENGTH_SHORT).show();
 
         final EditText edit =  (EditText) findViewById(R.id.editText);
-        int myNum ;
-        myNum = Integer.parseInt(edit.getText().toString());
-        /*try {
+
+        //myNum = Integer.parseInt(edit.getText().toString());
+        try {
+            int myNum = 0 ;
             myNum = Integer.parseInt(edit.getText().toString());
+            Toast toast = Toast.makeText(this, "Your number : " + myNum, Toast.LENGTH_SHORT);
+            toast.show();
         }catch(NumberFormatException nfe) {
+            Toast toast = Toast.makeText(this, nfe.getMessage(), Toast.LENGTH_SHORT);
+            toast.show();
+        }
 
-        }*/
 
 
-        Toast toast = Toast.makeText(this, "Your number : " + myNum, Toast.LENGTH_SHORT);
-        toast.show();
     }
 
 }
