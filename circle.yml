@@ -31,3 +31,4 @@ test:
     - cp -r /home/ubuntu/Thesis/app/build/outputs $CIRCLE_ARTIFACTS
     # copy the test results to the test results directory.
     - cp -r /home/ubuntu/Thesis/app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
+    - ls /home/ubuntu/Thesis/app/build/outputs/androidTest-results/*
