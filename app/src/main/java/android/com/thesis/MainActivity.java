@@ -25,9 +25,6 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
-                    final EditText edit =  (EditText) findViewById(R.id.editText);
-                    int myNum ;
-                    myNum = Integer.parseInt(edit.getText().toString());
                     return true;
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
@@ -46,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-        testingGit();
     }
 
 
@@ -65,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         //myNum = Integer.parseInt(edit.getText().toString());
         try {
-            int myNum = 0 ;
+            int myNum;
             myNum = Integer.parseInt(edit.getText().toString());
             Toast toast = Toast.makeText(this, "Your number : " + myNum, Toast.LENGTH_SHORT);
             toast.show();
