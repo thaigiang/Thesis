@@ -59,15 +59,15 @@ public class MainActivity extends AppCompatActivity {
         final EditText edit =  (EditText) findViewById(R.id.editText);
 
         //myNum = Integer.parseInt(edit.getText().toString());
-//        try {
-//            int myNum;
-//            myNum = Integer.parseInt(edit.getText().toString());
-//            Toast toast = Toast.makeText(this, "Your number : " + myNum, Toast.LENGTH_SHORT);
-//            toast.show();
-//        }catch(NumberFormatException nfe) {
-//            Toast toast = Toast.makeText(this, nfe.getMessage(), Toast.LENGTH_SHORT);
-//            toast.show();
-//        }
+        try {
+            int myNum;
+            myNum = Integer.parseInt(edit.getText().toString());
+            Toast toast = Toast.makeText(this, "Your number : " + myNum, Toast.LENGTH_SHORT);
+            toast.show();
+        }catch(NumberFormatException nfe) {
+            Toast toast = Toast.makeText(this, nfe.getMessage(), Toast.LENGTH_SHORT);
+            toast.show();
+        }
 
 
 
