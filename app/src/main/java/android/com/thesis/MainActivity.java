@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
-//                    final EditText edit =  (EditText) findViewById(R.id.editText);
-//                    int myNum ;
-//                    myNum = Integer.parseInt(edit.getText().toString());
+                    final EditText edit =  (EditText) findViewById(R.id.editText);
+                    int myNum ;
+                    myNum = Integer.parseInt(edit.getText().toString());
                     return true;
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
