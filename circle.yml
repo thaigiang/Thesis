@@ -17,8 +17,10 @@ dependencies:
         - echo y | $ANDROID_HOME/tools/bin/sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
         - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
    
-# start the emulator
-    - emulator -avd circleci-android24 -no-window:
+test:
+  override:
+    # start the emulator
+    - emulator -avd circleci-android25 -no-window:
         background: true
         parallel: true
     # wait for it to have booted
