@@ -20,7 +20,7 @@ dependencies:
 test:
   override:
     # start the emulator
-    - emulator -avd circleci-android24 -no-window:
+    - emulator -avd circleci-android25 -no-window:
         background: true
         parallel: true
     # wait for it to have booted
@@ -32,4 +32,5 @@ test:
     # copy the test results to the test results directory.
     - cp -r /home/ubuntu/Thesis/app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
     - ls /home/ubuntu/Thesis/app/build/outputs/androidTest-results/*
-    #- cat "/home/ubuntu/Thesis/app/build/outputs/androidTest-results/*/*.xml"
+    ##- cat "/home/ubuntu/Thesis/app/build/outputs/androidTest-results/*/*.xml"
+    
