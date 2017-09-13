@@ -21,10 +21,3 @@ test:
   override:
     - (./gradlew assemble):
             timeout: 360
-    # copy the build outputs to artifacts
-    - cp -r /home/ubuntu/Thesis/app/build/outputs $CIRCLE_ARTIFACTS
-    # copy the test results to the test results directory.
-    - cp -r /home/ubuntu/Thesis/app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
-    - ls /home/ubuntu/Thesis/app/build/outputs/androidTest-results/*
-    #- cat "/home/ubuntu/Thesis/app/build/outputs/androidTest-results/*/*.xml"
-    
