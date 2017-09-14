@@ -32,4 +32,4 @@ test:
     # copy the test results to the test results directory.
     - cp -r /home/ubuntu/Thesis/app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
     - ls /home/ubuntu/Thesis/app/build/outputs/androidTest-results/*/*.xml
-    - cat "/home/ubuntu/Thesis/app/build/outputs/androidTest-results/*/TEST-circleci-android22(AVD) - 5.1.1-app-.xml"
+    - cat '/home/ubuntu/Thesis/app/build/outputs/androidTest-results/*/TEST-circleci-android22(AVD) - 5.1.1-app-.xml'
