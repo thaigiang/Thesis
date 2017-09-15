@@ -23,11 +23,4 @@ public class ExampleInstrumentedTest {
 
         assertEquals("android.com.thesis", appContext.getPackageName());
     }
-    @Test
-    public void testMore() throws Exception {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
-
-        assertEquals("android.com.thesis", appContext.getPackageName());
-    }
 }
