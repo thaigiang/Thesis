@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             int myNum = 0 ;
             myNum = Integer.parseInt(edit.getText().toString());
-            Toast toast = Toast.makeText(this, "Your number : " + myNum, Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Your number is : " + myNum, Toast.LENGTH_SHORT);
             toast.show();
         }catch(NumberFormatException nfe) {
             Toast toast = Toast.makeText(this, nfe.getMessage(), Toast.LENGTH_SHORT);
